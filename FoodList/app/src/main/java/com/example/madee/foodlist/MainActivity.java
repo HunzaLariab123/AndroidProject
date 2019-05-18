@@ -2,15 +2,22 @@ package com.example.madee.foodlist;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.Button;
 import android.widget.ListView;
 
 public class MainActivity extends AppCompatActivity {
 
-    ListView listView ;
-    String title[] = {"Italian Cheeasy Burger ","Mayoo with Hot Spicy", "Chicken Garlic Mayoo"};
+   Button bur , bb;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.bbq);
+
+        bur = (Button)findViewById(R.id.burger1);
+        bb = (Button)findViewById(R.id.bbq);
+        bur.setEnabled(false);
+        bb.setEnabled(false);
     }
 }
