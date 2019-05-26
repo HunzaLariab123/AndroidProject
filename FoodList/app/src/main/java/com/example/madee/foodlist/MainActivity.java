@@ -7,7 +7,7 @@ import android.widget.ListView;
 
 public class MainActivity extends AppCompatActivity {
 
-   Button bur , bb;
+   Button bur , bb, i;
 
 
     @Override
@@ -17,7 +17,9 @@ public class MainActivity extends AppCompatActivity {
 
         bur = (Button)findViewById(R.id.burger1);
         bb = (Button)findViewById(R.id.bbq);
+        i = (Button)findViewById(R.id.italian2);
         bur.setEnabled(false);
         bb.setEnabled(false);
+        i.setEnabled(false);
     }
 }
